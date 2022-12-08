@@ -6,9 +6,9 @@ spring:
 
     datasource:
         driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
-        password: 14950
+        password: root
         url: jdbc:sqlserver://localhost:1433;databaseName=redis_sample;encrypt=true;trustServerCertificate=true;
-        username: sa
+        username: root
     jpa:
         hibernate:
             ddl-auto: update
