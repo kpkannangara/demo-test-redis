@@ -1,0 +1,19 @@
+spring:
+    cache:
+        type: redis
+        redis:
+            time-to-live: 600000  #im put one more zero to end extend TTL cache-null-values: true
+
+    datasource:
+        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+        password: 14950
+        url: jdbc:sqlserver://localhost:1433;databaseName=redis_sample;encrypt=true;trustServerCertificate=true;
+        username: sa
+    jpa:
+        hibernate:
+            ddl-auto: update
+            dialect: org.hibernate.dialect.SQLServer2012Dialect
+        properties:
+            hibernate:
+                format_sql: true
+        show-sql: true
